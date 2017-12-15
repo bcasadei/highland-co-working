@@ -1,0 +1,399 @@
+@font-face {
+    font-family: 'Jenna-Sue';
+    src:url('../fonts/Jenna-Sue.ttf.svg#Jenna-Sue') format('svg'),
+        url('../fonts/Jenna-Sue.ttf.woff') format('woff'),
+        url('../fonts/Jenna-Sue.ttf.eot'),
+        url('../fonts/Jenna-Sue.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 116px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1   {
+  font-family: 'Jenna-Sue', cursive;
+  color: #E3725B;
+}
+
+h2 {
+  color: #4A4A4A;
+}
+
+h3 {
+  color: #E3725B;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.border {
+  background-image: url("../images/border.png");
+  background-repeat: repeat-x;
+  overflow-x: hidden;
+  height: 18px;
+}
+
+.logo {
+  background-image: url("../images/logo_xsm.png");
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 112px;
+  margin: 0 auto;
+}
+
+.logo-text {
+  font-family: 'Jenna-Sue', cursive;
+  font-size: 45px;
+}
+
+.logo-text p {
+  margin-bottom: 5px;
+}
+
+.brand, .logo, .logo-text {
+  display: block;
+}
+
+.brand {
+  margin: 20px 0;
+  text-align: center; 
+
+  a {
+    color: #1B798C;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #1B798C;
+    text-decoration: none;
+  }
+}
+
+.tag-line {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+// Navbar Styles
+.navbar-default {
+  margin: 15px 0;
+}
+
+ul.nav.navbar-nav > li > a {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+button.navbar-toggle {
+  margin: 0 30px 0 0;
+}
+
+#bs-navbar-collapse {
+  margin-top: 35px;
+}
+
+#bs-navbar-collapse > ul {
+  margin: 10px -50px;
+}
+
+// Index Page Background Image Styles
+.image-container {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 0;
+  position: relative;
+}
+
+.main-image {
+  @extend .image-container;
+  background-image: url("../images/home_main_image_xs.png");
+  padding-top: 34%;
+} /* (img-height / img-width * container-width) = padding-top */
+
+.page-title {
+  font-size: floor(($font-size-h1 * 1.2));
+  color: #FFFFFF;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+  margin: 0;
+  position: absolute; 
+  top: 40%; 
+  bottom:0; 
+  left:0; 
+  right:0;
+}
+
+.header-image {
+  @extend .image-container;
+  background-image: url("../images/blog_header_xs.png");
+  padding-top: 25%;
+}
+
+.header-content {
+  margin: 0 auto;
+  position: absolute; 
+  top: 20%; 
+  bottom:0; 
+  left:0; 
+  right:0;
+}
+
+.childcare-image {
+  @extend .image-container;
+  background-image: url("../images/drop_in_childcare_xs.png");
+  padding-top: 32%;
+  margin-top: 20px;
+}
+
+.ammenities-image {
+  @extend .image-container;
+  background-image: url("../images/ammenities_xs.png");
+  padding-top: 32%;
+}
+
+.image-content {
+  margin: 0;
+  position: absolute; 
+  top: 0; 
+  bottom:0; 
+  left:0; 
+  right:0;
+}
+
+.image-text {
+  color: #FFFFFF;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+  margin: 10px 0;
+}
+
+// Footer Styles
+.footer {
+  background-color: #1B798C;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.footer > ul {
+  display: block;
+  padding-left: 0px;
+}
+
+.footer > ul > li {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0 10px 0 10px;
+}
+
+.footer > ul > li > a {
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.footer > ul > li > a:hover {
+  color: #E3725B;
+}
+
+.footer > .copyright {
+  font-size: 10px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 116px;
+}
+
+// Blog Styles
+.article-preview {
+  margin: 20px 0;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+.sidebar-content {
+  margin: 20px 0;
+}
+
+.sidebar-content > ul > li > a > h4 {
+  margin: 15px 0 5px 0;
+}
+
+.sidebar-content > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-content .post-date {
+  margin-bottom: 10px;
+  font-size: 85%;
+}
+
+.pagination {
+  // font-size: 16px;
+  margin: 20px auto;
+}
+
+// WP Search Widget and Contact Form styles
+#s {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+input#searchsubmit, input.wpcf7-submit, textarea {
+  display: inline-block;
+  padding: 4px;
+  margin: 0 2px 2px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+input#searchsubmit:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+input.wpcf7-submit {
+  padding: 6px 12px;
+}
+
+.wpcf7-text, .wpcf7-textarea {
+  width: 100%;
+}
+
+// Media Queries
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: floor(($font-size-base * 6.28));
+  }
+
+  .page-title {
+    font-size: floor(($font-size-base * 6.4));
+    top: 50%; 
+  }
+
+  .header-content {
+    font-size: floor(($font-size-base * 6.4));
+    top: 35%; 
+  }
+
+  .image-content {
+    top: 10%; 
+  }
+
+  .footer > ul > li {
+    display: inline-block;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .brand {
+    text-align: left;
+    margin: 20px 0 20px 30px;
+  }
+
+  .brand, .logo, .logo-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .logo-text {
+    margin-left: 10px;
+  }
+
+  #bs-navbar-collapse {
+    margin-top: 0;
+  }
+
+  #bs-navbar-collapse > ul {
+    margin: 0;
+  }
+
+  #bs-navbar-collapse > ul > li > a {
+    padding: 50px 12px;
+  }
+
+  .navbar-collapse {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+
+  .navbar-default {
+    float: right;
+  }
+
+  .main-image {
+    background-image: url("../images/home_main_image.png");
+    padding-top: 23%;
+  }
+
+  .header-image {
+    background-image: url("../images/blog_header.png");
+    padding-top: 17%;
+  }
+
+  .header-content {
+    top: 27%; 
+  }
+
+  .childcare-image {
+    background-image: url("../images/drop_in_childcare.png");
+    padding-top: 22%;
+    margin-top: 20px;
+  }
+
+  .ammenities-image {
+    background-image: url("../images/ammenities.png");
+    padding-top: 22%;
+  }
+
+  .image-content {
+    top: 10%; 
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #bs-navbar-collapse > ul > li > a {
+    padding: 50px 15px;
+  }
+}
